@@ -12,6 +12,11 @@
   .bg-light {
     background-color: var(--aw-color-bg-page);
   }
+  .bg-grad {
+    --tw-bg-opacity: 1;
+    background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(182,189,255,0.15312062324929976) 100%);
+  }
   .text-page {
     color: var(--aw-color-text-page);
   }

@@ -8,6 +8,7 @@ import SocialShare from '~/components/common/SocialShare.astro';
 import { getPermalink } from '~/utils/permalinks';
 import { getFormattedDate } from '~/utils/utils';
 
+
 import type { Post } from '~/types';
 
 export interface Props {
@@ -19,6 +20,9 @@ const { post, url } = Astro.props;
 ---
 
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+  <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+    <div class="aspect-[1108/632] w-[69.25rem] bg-[#80caff] opacity-10" style="clip-path: polygon(26.4% 51.7%, 8.3% 11.8%, 0% 46.4%, 2.6% 82.2%, 7.5% 84.9%, 24.3% 64%, 44.7% 47.5%, 53.5% 49.4%, 55% 62.9%, 49.7% 87.2%, 78.7% 64.1%, 99.9% 100%, 94.6% 51.1%, 78.6% 63.9%, 41.1% 0.2%, 26.4% 51.7%)"></div>
+  </div> 
   <article>
     <header class={post.image ? '' : ''}>
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">

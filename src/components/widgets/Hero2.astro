@@ -21,6 +21,9 @@ const {
 
 <section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" aria-hidden="true">
+      <div class="aspect-[1108/632] w-[69.25rem] bg-[#80caff] opacity-10" style="clip-path: polygon(26.4% 51.7%, 8.3% 11.8%, 0% 46.4%, 2.6% 82.2%, 7.5% 84.9%, 24.3% 64%, 44.7% 47.5%, 53.5% 49.4%, 55% 62.9%, 49.7% 87.2%, 78.7% 64.1%, 99.9% 100%, 94.6% 51.1%, 78.6% 63.9%, 41.1% 0.2%, 26.4% 51.7%)"></div>
+    </div>    
     <slot name="bg">
       {bg ? <Fragment set:html={bg} /> : null}
     </slot>
@@ -40,7 +43,7 @@ const {
         {
           title && (
             <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
+              class="text-3xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
               set:html={title}
             />
           )
